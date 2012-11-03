@@ -19,6 +19,7 @@ ifneq ($(BUILD_TINY_ANDROID), true)
 LOCAL_PATH := $(call my-dir)
 
 test_src_files = \
+    fenv_test.cpp \
     getcwd_test.cpp \
     pthread_test.cpp \
     regex_test.cpp \
