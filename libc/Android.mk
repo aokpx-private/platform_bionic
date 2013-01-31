@@ -590,6 +590,7 @@ ifeq ($(TARGET_ARCH),arm)
   endif
   ifeq ($(ARCH_ARM_HAVE_ARMV7A),true)
     libc_common_cflags += -DNEON_UNALIGNED_ACCESS -DNEON_MEMCPY_ALIGNMENT_DIVIDER=224
+  endif
   # Add in defines to activate SCORPION_NEON_OPTIMIZATION
   ifeq ($(TARGET_USE_SCORPION_BIONIC_OPTIMIZATION),true)
     libc_common_cflags += -DSCORPION_NEON_OPTIMIZATION
